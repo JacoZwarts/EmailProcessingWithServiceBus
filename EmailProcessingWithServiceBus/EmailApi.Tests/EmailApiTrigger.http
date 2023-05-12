@@ -1,0 +1,14 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+POST http://localhost:7240/api/Function1
+Content-Type application/json
+
+{
+    "To":["Test1@email.com"],
+    "From":"test@email.com",
+    "Body":"Test email body",
+    "Attachments":[
+        {"FileName":"Doc1.json","ContentType":"application/json","Content":"eyJkYXRhIjoiVGVzdCBjb250ZW50In0="},
+        {"FileName":"Doc2.json","ContentType":"application/json","Content":"eyJkYXRhIjoiVGVzdCBjb250ZW50MiJ9"}
+    ]
+}
